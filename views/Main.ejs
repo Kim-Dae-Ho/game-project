@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 라우터엣허 넘어오는 user값이 undefinded일 경우, 로그인 실패
+                            user값이 object일 경우, 로그인 성공 -->
+    <h1>회원관리페이지</h1>
+    <%if(user==undefined){%>
+    <a href ="http://127.0.0.1:5500/game-project/public/ex02Login.html"><button>로그인</button></a>
+    <%}else{%>
+    <a href ="http://121.147.52.82:3100/Logout"><button>로그아웃</button></a>
+    <%}%>
+    <a href ="http://127.0.0.1:5500/game-project/public/ex02.join.html"><button>회원가입</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/ex02uptate.html"><button>회원수정</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/ex02delete.html"><button>회원삭제</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/ex03OneSelect.html"><button>회원조회</button></a>
+    <!-- <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>팀 리스트 보기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>팀 맴버 보기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>대회리스트 보기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>대회 진행상황 보기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>자유게시판 글 남기기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>팀 모집 게시판 글 남기기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>Q&A 게시판 글 남기기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>자유게시판 댓글 남기기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>팀 모집 게시판 댓글 남기기</button></a>
+    <a href ="http://127.0.0.1:5500/game-project/public/public/"><button>Q&A 게시판 댓글 남기기</button></a> -->
+
+    <a href ="http://121.147.52.82:3100/Select"><button>회원검색</button></a>
+</body>
+</html>

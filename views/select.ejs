@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원정보검색</h1>
+    <table border = "1px">
+        <tr>
+            <th>member_code</th>
+            <th>member_id</th>
+            <th>member_name</th>
+            <th>member_email</th>
+            <th>member_phone</th>
+            <th>member_lol_name</th>
+        </tr>
+        <%for(let i = 0; i<in_row.length;i++){%>
+        <tr align = "center">
+            <td><%=in_row[i].member_code%></td>
+            <td><%=in_row[i].member_id%></td>
+            <td><%=in_row[i].member_name%></td>
+            <td><%=in_row[i].member_email%></td>
+            <td><%=in_row[i].member_phone%></td>
+            <td><%=in_row[i].member_lol_name%></td>
+        </tr>
+        <%}%>
+    </table>
+    <a href="http://127.0.1.1:5500/NODEJS/game-project/public/Main.ejs">메인페이지로 돌아가기</a>
+</body>
+</html>

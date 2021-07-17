@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	tr{
+		height: 40px;
+		text-align: center;
+	}
+	table{
+		margin: 0 auto;
+	}
+</style>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>	
+	<form action ="http://121.147.52.82:3000/Grade" method="post">
+		<fieldset>
+			<legend>성적확인프로그램</legend>
+			<table width="500">	
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name ="name1" value="name1"></td>
+				</tr>
+				<tr>
+					<td>HTML점수</td>
+					<td><input type="text" name ="html1" value="html1"></td>
+				</tr>
+				<tr>
+					<td>CSS점수</td>
+					<td><input type="text" name ="css1" value="css1"></td>
+				</tr>
+					<tr>
+					<td>NodeJS점수</td>
+					<td><input type="text" name ="nodejs1" value="nodejs1"></td>
+				</tr>		
+				<tr>
+					<td>ANDROID점수</td>
+					<td><input type="text" name ="android1" value="android1"></td>
+				</tr>		
+				<tr>
+					<td colspan="2"><input type="submit" value="확인하기!"></td>
+				</tr>																																			
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

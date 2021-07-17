@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>index페이지 랜더링 성공</h1>
+    사용자가 보내주는 num1 변수값 : <%=in_num1%> <br>
+    사용자가 보내주는 num2 변수값 : <%=in_num2%> <br>
+    <!-- 표현식 : ejs에서 변수를 출력하는 영역 -->
+    <!-- 사용자가 보내준 num1과 num2의 합이 짝수인지 홀수인지 출력 -->
+
+    <%if (parseInt(in_num1)+parseInt(in_num2)%2==0){%>
+    <!-- 스크립틀릿(Scriptlet) : ejs에서 자바스크립트 코드를 구현할 수 있는 영역 -->
+            <br>num1과 num2의 합은 짝수
+        <%}else{%>
+            <br>num1과 num2의 합은 홀수
+        <%}%>
+    %>
+</body>
+</html>

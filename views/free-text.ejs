@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자유게시판 글 쓰기</h1>
+    <table border = "1px">
+        <tr>
+            <th> 글제목</th>
+            <th>작성자</th>
+            <th>내용</th>
+
+        </tr>
+        <%for(let i = 0; i<in_row.length;i++){%>
+        <tr align = "center">
+            <td><%=in_row[i].free_board_title%></td>
+            <td><%=in_row[i].member_lol_name%></td>
+            <td><%=in_row[i].free_board_text%></td>
+        </tr>
+        <%}%>
+    </table>
+    <a href="http://127.0.1.1:5500/NODEJS/game-project/public/Main.ejs">메인페이지로 돌아가기</a>
+</body>

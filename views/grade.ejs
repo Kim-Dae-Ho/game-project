@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	tr{
+		height: 40px;
+		text-align: center;
+	}
+	table{
+		margin: 0 auto;
+	}
+</style>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>	
+		<fieldset>
+			<legend>성적확인프로그램</legend>
+			<table width="500">	
+				<tr>
+					<td>이름</td>
+					<td><%=in_name%> <br></td>
+				</tr>
+				<tr>
+					<td>HTML점수</td>
+					<td><%=in_html%></td>
+				</tr>
+				<tr>
+					<td>CSS점수</td>
+					<td><%=in_css%></td>
+				</tr>
+					<tr>
+					<td>NodeJS점수</td>
+					<td><%=in_nodejs%></td>
+				</tr>		
+				<tr>
+					<td>ANDROID점수</td>
+					<td><%=in_android%></td>
+				</tr>
+				<tr>
+					<td>평균</td>
+					<td><%let avg=(in_html+in_css+in_nodejs+in_android)/4%>
+					<%=avg%>
+					</td>
+				</tr>
+				<tr>
+					<td>학점</td>
+					<td><%if (avg>=95){%>
+							A+
+						<%}else if (avg>=90){%>
+							A
+						<%}else if (avg>=85){%>
+							B+
+						<%}else if (avg>=80){%>
+							B
+						<%}else if (avg>=75){%>
+							C+
+						<%}else if (avg>=70){%>
+							C
+						<%}else if (avg>=65){%>
+							D+
+						<%}else if (avg>=60){%>
+							D
+						<%}else if (avg>=59){%>
+							F
+							<%}%>
+						%></td>
+				</tr>																														
+			</table>
+		</fieldset>
+</body>
+</html>
